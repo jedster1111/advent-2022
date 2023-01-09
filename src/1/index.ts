@@ -1,3 +1,4 @@
+import { sum } from "../utils/sum"
 import { input } from "./input"
 
 export const getMaxCalories = (allCalories: (number | undefined)[]): number => {
@@ -31,8 +32,6 @@ const getSummedCalories = (allCalories: (number | undefined)[]) => {
   calories.push(caloryCount)
   return calories
 }
-
-const sum = (a: number, b: number) => a + b
 
 const sortAscending = (calories: number[]) => {
   return calories.sort((a, b) => a - b)
